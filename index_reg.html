@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="center">
+        <h1>Registration</h1>
+        <form method="post">
+            <div class="txt_field">
+                <input type="text" required>
+                <span></span>
+                <label>Name</label>
+            </div>
+            <div class="txt_field">
+                <input type="number" required>
+                <span></span>
+                <label>Roll_no</label>
+            </div>
+            <div class="txt_field">
+                <input type="email" required>
+                <span></span>
+                <label>Email</label>
+            </div>
+            <div class="course txt_field">
+                <select>
+                  <option value="1">MCA-1st</option>
+                  <option value="2">MCA-2nd</option>
+                </select>
+            </div>
+            <div class="txt_field">
+                <input type="number" required>
+                <span></span>
+                <label>Mobile_no</label>
+            </div>
+            <div class="txt_field">
+                <input type="password" id="showpass"  required>
+                <i class="fas fa-eye-slash" id="iconEye" onclick="passFunction()" style="position:absolute;right: 0;top: 35%;"></i>
+                <span></span>
+                <label>Password</label>
+            </div>
+            <div class="txt_field">
+                <input type="password" required>
+                <span></span>
+                <label>Repeat your password</label>
+            </div>            
+            <div class="check">
+                <input type="checkbox"/>
+                <label>I agree all statements in
+                    <a href="#!">Terms of service</a>
+                </label>
+            </div>
+            <input type="submit" value="Submit">
+            <div class="sign_up">
+                Have already an account?
+                <a href="#!">Login here</a>
+            </div>
+        </form>
+        
+    </div>
+    <script src="/index.js"></script>
+</body>
+</html>
